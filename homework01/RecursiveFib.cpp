@@ -15,6 +15,6 @@ int main()
 
 	cout << recursiveFib(number) << endl;
 
-	//Сложност- O(2^n)
+	//complexity- O(2^n)
 	return 0;
 }
