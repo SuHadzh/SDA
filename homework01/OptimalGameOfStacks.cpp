@@ -23,13 +23,13 @@ int main() {
 
 		int sum = 0, count = 0, temp = 0, i = 0, j = 0;
 
-		while (i<n && sum + a[i] <= x) {    //considering only first stack and calculating count
+		while (i<n && sum + a[i] <= x) {    
 			sum += a[i];
 			i++;
 		}
 		count = i;
 
-		while (j<m && i >= 0) {          //now adding one element of second stack at a time and subtracting the top element of first stack and calculating the count
+		while (j<m && i >= 0) {         
 			sum += b[j];
 			j++;
 			while (sum>x && i>0) {
