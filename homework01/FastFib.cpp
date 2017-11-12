@@ -15,6 +15,6 @@ int main()
 	}
 
 	cout << fibNum << endl;
-	//сложност- O(n)
+	//complexity- O(n)
 	return 0;
 }
