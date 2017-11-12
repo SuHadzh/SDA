@@ -43,5 +43,5 @@ int main()
 
 	cout << fib(num) << endl;
 	return 0;
-	//Сложност- O(logn)
+	//complexity- O(logn)
 }
