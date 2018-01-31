@@ -1,0 +1,26 @@
+#include <iostream>
+#include "Graph.h"
+using namespace std;
+
+int main()
+{
+	int testCasesCnt, roadCnt;
+	cin >> testCasesCnt;
+
+	int x, y;
+	for (int i = 0; i < testCasesCnt; i++)
+	{
+		Graph g;
+		cin >> roadCnt;
+		for (int j = 0; j < roadCnt; j++)
+		{
+			cin >> x >> y;
+			if (!g.isMember(x))
+				g.AddTop(x);
+			if (!g.isMember(y))
+				g.AddTop(y);
+		}
+		cout << g.size() << endl;
+	}
+	return 0;
+}
